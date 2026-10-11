@@ -1,0 +1,131 @@
+
+
+      
+let dragWindow = null;
+let offsetX = 0;
+let offsetY = 0;
+
+document.querySelectorAll("[data-drag-handle]").forEach(handle => {
+    handle.addEventListener("mousedown", function(event) {
+        const windowEl = this.closest(".app-window");
+        if (!windowEl || windowEl.hidden) return;
+
+        dragWindow = windowEl;
+        const rect = dragWindow.getBoundingClientRect();
+        offsetX = event.clientX - rect.left;
+        offsetY = event.clientY - rect.top;
+        dragWindow.style.zIndex = String(getNextZIndex());
+    });
+});
+
+document.addEventListener("mousemove", function(event) {
+    if (!dragWindow) return;
+
+    dragWindow.style.left = `${event.clientX - offsetX}px`;
+    dragWindow.style.top = `${event.clientY - offsetY}px`;
+});
+
+document.addEventListener("mouseup", function() {
+    dragWindow = null;
+});
+
+
+  
+
+
+</div>
+      <div id="files-window" class="app-window" hidden>
+            <div class="window-header" data-drag-handle>
+                <span>Files</span>
+                <button class="close-window" onclick="closeApp('files-window')">×</button>
+            </div>
+            <div class="image-gallery">
+                <img src="orez-z/ryz1.webp" alt="User profile image">
+                <img src="orez-z/ryz2.jpg" alt="Web page screenshot">
+                <img src="orez-z/ryz3.jpg" alt="Another image">
+            </div>
+      </div>]
+
+
+
+
+
+      #desktop {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("orez-z\7.jpg");
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    
+}
+
+???
+
+var welcomeScreenClose = document.querySelector("#welcomeclose")
+
+var welcomeScreenOpen = document.querySelector("#welcomeopen")
+
+welcomeScreenClose.addEventListener("click", function() {
+  closeWindow(welcomeScreen);
+});
+
+welcomeScreenOpen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
+});
+
+
+var welcomeScreen = document.querySelector("#mydiv")
+
+function closeWindow(element) {
+  element.style.display = "none"
+}
+function openWindow(element) {
+  element.style.display = "flex"
+}
+//ummm
+var selectedIcon = undefined
+
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element
+} 
+function deselectIcon(element) {
+  element.classList.remove("selected");
+  selectedIcon = undefined
+}
+function handleIconTap(element) {
+  if (element.classList.contains("selected")) {
+    deselectIcon(element)
+    openWindow(window)
+  } else {
+    selectIcon(element)
+  }
+}
+
+<div class="windowheader" id="notesheader"></div>
+
+#desktop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+class="closebutton" id="notesclose" onclick="closeNotes()"
