@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -33,37 +31,32 @@
         </div>
 
          
-        <div class="selected" id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
-      <img src="orez-z\jabko2.jpg" style="width: 64px; height: 64px; border-radius: 16px;" onclick="openNotes()">
+        <div id="desktopApps" class="selected" style="margin-top: 64px;margin-left:16px; padding: 5px;">
+      <img src="orez-z\jabko2.jpg" style="width: 64px; height: 64px; border-radius: 16px;" type="button" onclick="nopen()">
       <p style="margin: 0px; color: #fff; ">Notes</p>
+      </div>
 
-      <button onclick="openWin()">Open "myWindow"</button>
-      <button onclick="closeWin()">Close "myWindow"</button>
-   
-
-        <div class="window" id="notes" style="top: calc(50% - 240px); left: calc(50% - 260px); ">
+        <div class="window" id="notes" style="display:none; text-align: left; calc(50% - 240px); left: calc(50% - 260px); ">
     <div class="windowheader" id="notesheader">
-      <button onclick="closeNotes()" class="closebutton" id="notesclose">x</button>
+      <button onclick="nclose()" class="closebutton" id="notesclose">x</button>
       
 
       <p class="headertext">Notes</p>
       <div style="width: 16px; margin-right: 6x; height: 16px;"></div>
     </div>
     <div style="background-color: #fff; margin: 6px; border-radius: 12px; width: 520px; height: 480px; padding: 16px;">
-      <p>Hacker Notes</p>
+      <p>OS to do list:</p>
+      <ul>
+        <li>log-in screen</li>
+        <li>another app</li>
+        <li>super app</li>
+
+      </ul>
     </div>
   </div>
 
 
-        <div class="window" id="mydiv"> 
-        <div class="windowheader" id="mydivheader">Click here to move <div><p style="cursor: pointer" id="welcomeclose" class="closebutton">Close</p></div>
-          </div>
-          
-          <p>Move</p>
-          <p>this</p>
-          <p>DIV</p>
-       </div>
-    </div> 
+  
   </div> 
         
       
