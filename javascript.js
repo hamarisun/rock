@@ -54,73 +54,9 @@ function dragElement(elmnt) {
 }
 
 
-// utweranie i zmaykaniea
-
-var welcomeScreenOpen = document.querySelector("#welcomeopen")
-var welcomeScreen = document.querySelector("#welcome")
-
-function closeWindow(element) {
-  element.close()
+function nclose() {
+  document.getElementById("notes").style.display = "none";
 }
-function openWindow(element) {
-  element.style.display = "flex"
-}
-welcomeScreenClose.addEventListener("click", function() {
-  closeWindow(welcomeScreen);
-});
-
-welcomeScreenOpen.addEventListener("click", function() {
-  openWindow(welcomeScreen);
-});
-
-
-var biggestIndex = 1;
-
-var notesScreen = document.querySelector("#notes")
-
-var notesScreenClose = document.querySelector("closebutton")
-
-notesScreenClose.addEventListener("click", () => closeWindow(notesScreen));
-
-
-
-//app
-function addWindowTapHandling(element) {
-  element.addEventListener("mousedown", () =>
-    handleWindowTap(element)
-  )
-}
-function handleWindowTap(element) {
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-}
-s
-
-
-//topbar priority
-var topBar = document.querySelector("#top")
-
-function openWindow(element) {
-  element.style.display = "flex";
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-  topBar.style.zIndex = biggestIndex + 1;
-}
-
-function handleWindowTap(element) {
-  biggestIndex++;  // Increment biggestIndex by 1
-  element.style.zIndex = biggestIndex;
-  topBar.style.zIndex = biggestIndex + 1;
-  deselectIcon(selectedIcon)
-}
-
-//okno
-let myWindow;
-
-function openWin() {
-  myWindow = window.open("", "", "width=200,height=100");
-}
-
-function closeWin() {
-  myWindow.close();
+function nopen(){
+  document.getElementById("notes").style.display = "flex";
 }
