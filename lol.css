@@ -25,3 +25,7 @@
   border: solid 1px rgba(0, 0, 0, 0.25);
   margin-left: 6px;
 }
+.selected:hover{
+  background-color: rgba(49, 19, 199, 0.441);
+
+}
