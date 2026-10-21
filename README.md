@@ -12,3 +12,9 @@ I started building it to learn a bit of coding.Quickly found out that i don't un
 Now i think i just do it for fun(if i already have an idea of what to do) otherwise i learn, but that can be fun too.
 
 
+## Features
+
+-Desktop-style interface
+-Draggable and interactive windows
+-Runs directly in the browser
+
