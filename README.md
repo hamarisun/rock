@@ -21,6 +21,7 @@ Now i think i just do it for fun(if i already have an idea of what to do) otherw
 
 ## How does it look
 
+![example](./1.png)
 
 ## Lenguages
 
