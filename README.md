@@ -19,3 +19,9 @@ Now i think i just do it for fun(if i already have an idea of what to do) otherw
 - Draggable and interactive windows
 - Runs directly in the browser
 
+  ## Lenguages
+
+  - HTML
+  - CSS
+  - Javascript
+
