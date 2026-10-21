@@ -14,7 +14,7 @@ Now i think i just do it for fun(if i already have an idea of what to do) otherw
 
 ## Features
 
--Desktop-style interface
--Draggable and interactive windows
--Runs directly in the browser
+- Desktop-style interface
+- Draggable and interactive windows
+- Runs directly in the browser
 
