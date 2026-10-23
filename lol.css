@@ -5,6 +5,7 @@
   text-align: center;
   border: 1px solid  #d3d3d3;
   border-radius: 16px;
+  top: calc(50% - 240px); left: calc(50% - 260px);
 } 
 
 .windowheader {
@@ -15,17 +16,122 @@
   color: #102c44;
  border-radius: 14px;
 }
+.windowin{
+  background-color: #fff;
+  margin: 6px;
+  border-radius: 12px;
+  width: 520px;
+  height: 480px;
+  padding: 16px;
+}
 
 .closebutton {
+  text-align: center;
   width: 16px;
   height: 16px;
   cursor: pointer;
   background-color: #EC6B5E;
-  border-radius: 16px;
+  border-radius: 4px;
+  padding: 3px;
   border: solid 1px rgba(0, 0, 0, 0.25);
-  margin-left: 6px;
+  
+}
+.closebutton:hover{
+  background-color: #b2382c;
+  color: rgb(255,255,255)
 }
 .selected:hover{
   background-color: rgba(49, 19, 199, 0.441);
 
+}
+.photo{
+  width: 200px; 
+  height: 150px;
+  background-color: #899198;
+  border:7px solid;
+  border-radius: 2px;
+  border-color: #d3d6da;
+}
+.ph{
+  width: 200px; 
+  height: 150px;
+  border: #899198 7px solid;
+  border-radius: 2px; 
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.headertext{
+  font-variant: small-caps;
+  font-size: 30px;
+}
+#login{
+  height: 100%;
+  width: 100%;
+  background-color: #d3d6da;
+  display: none;
+}
+
+
+
+#cal{
+ display: inline;
+}
+
+#calc{
+  height: 450px;
+  width: 380px;
+  padding: 12px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bton{
+  border: 0px;
+  outline: 0px;
+  width: 70px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #62686d;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+.bton:hover{
+  background-color: #3e4144;
+}
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: #62686d;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+form input.display{
+  text-align: right;
+  flex: 1px;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+#eq{
+  color:#fff;
+  background-color: #b5669b;
+  width: 165px;
+}
+.operator {
+  background-color: #6ba4d3;
+}
+.operator:hover{
+  background-color: #355671;
 }

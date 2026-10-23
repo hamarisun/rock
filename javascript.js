@@ -9,8 +9,10 @@ function updateTime() {
 
 
 //Make the DIV element draggagle:
-dragElement(document.getElementById("mydiv"));
 dragElement(document.querySelector("#notes"));
+dragElement(document.querySelector("#App"));
+dragElement(document.querySelector("#cal"));
+
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -60,3 +62,19 @@ function nclose() {
 function nopen(){
   document.getElementById("notes").style.display = "flex";
 }
+
+
+function aclose() {
+  document.getElementById("App").style.display = "none";
+}
+function aopen(){
+  document.getElementById("App").style.display = "flex";
+}
+
+function cclose() {
+  document.getElementById("cal").style.display = "none";
+}
+function copen(){
+  document.getElementById("cal").style.display = "flex";
+}
+//cal
