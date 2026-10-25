@@ -23,7 +23,7 @@ Now i think i just do it for fun(if i already have an idea of what to do) otherw
 
 ![example](./1.png)  ![example](./2.png)
 
-![4](./4.png)
+![fullscrean](./4.png)
 
 ## Lenguages
 
