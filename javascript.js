@@ -77,4 +77,21 @@ function cclose() {
 function copen(){
   document.getElementById("cal").style.display = "flex";
 }
-//cal
+//login
+function login() {
+  var x = document.getElementById("desktop");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+//logout
+function logout() {
+  var x = document.getElementById("login");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

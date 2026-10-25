@@ -14,14 +14,10 @@
 
 
   <body style=" background-size: cover; position: absolute; background-image: url('orez-z/7.jpg'); background-repeat: no-repeat; width: 100% ;display: flex; height: 100vh  ">
-    <div id="login">
-
-    </div>
     
     
     
-    <div>
-      <div id="desktop" >
+    <div id="desktop" >
         <div id="top" style=" width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between; position: fixed; top: -0.25%; left: -0.09%;">
       
         <p
@@ -35,7 +31,7 @@
         </p>
         </div>
 
-         
+      <div style="display: inline;"> 
         <div class="selected" style="margin-top: 64px;margin-left:16px; padding: 5px;">
       <img src="orez-z\jabko2.jpg" style="width: 64px; height: 64px; border-radius: 16px;" type="button" onclick="nopen()">
       <p style="margin: 0px; color: #fff ;text-align:center; ">Notes</p>
@@ -50,6 +46,7 @@
       <div  class="selected" style="margin-top: 40px;margin-left:16px; padding: 5px;">
       <img src="orez-z\japko5.jpg" style="width: 64px; height: 64px; border-radius: 16px;" type="button" onclick="copen()">
       <p style="margin: 0px; color: #fff; text-align: center;">Calculator</p>
+      </div>
       </div>
 
 
@@ -67,7 +64,6 @@
     <div class="windowin">
       <p>OS to do list:</p>
       <ul>
-        <li>log-in screen</li>
         <li>another app(done)</li>
         <li>super app(done)</li>
 
@@ -97,49 +93,52 @@
     </div>
   </div>
 
-
   <div class="window" id="cal" style="display: none;">
     <div class="windowheader">
     <div onclick="cclose()" class="closebutton" type="button">x</div>
     <p class="headertext">C<br>a<br>l<br>c<br>u<br>l<br>a<br>t<br>o<br>r</p>
     </div>
-    
-    <div id="calc">
-    <form>
-      <div class="display"><input type="text" class="display"></div>
-      <div>
-        <input type="button" value="AC" onclick="display.value =' '" class="operator bton">
-        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operator bton">
-        <input type="button" value="." onclick="display.value +='.'" class="operator bton">
-        <input type="button" value="/" onclick="display.value +='/'" class="operator bton">
+
+    <div class="calulator">
+      <div class="calc">
+        <form>
+          <div class="display"><input type="text" id="display"></div>
+          <div>
+            <input type="button" value="AC" onclick="display.value =' '" class="operator">
+            <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operator">
+            <input type="button" value="/" onclick="display.value +='/'" class="operator">
+            <input type="button" value="*" onclick="display.value +='*'"  class="operator">
+          </div>
+          <div>
+            <input type="button" value="7" onclick="display.value +='7'" >
+            <input type="button" value="8" onclick="display.value +='8'" >
+            <input type="button" value="9" onclick="display.value +='9'" >
+            <input type="button" value="-" onclick="display.value +='-'" class="operator">
+          </div>
+          <div>
+            <input type="button" value="4" onclick="display.value +='4'" >
+            <input type="button" value="5" onclick="display.value +='5'" >
+            <input type="button" value="6" onclick="display.value +='6'" >
+            <input type="button" value="+" onclick="display.value +='+'" class="operator">
+          </div>
+          <div>
+            <input type="button" value="1" onclick="display.value +='1'" >
+            <input type="button" value="2" onclick="display.value +='2'" >
+            <input type="button" value="3" onclick="display.value +='3'" >
+            <input type="button" value="." onclick="display.value +='.'" class="operator">
+          </div>
+          <div>
+            <input type="button" value="00" onclick="display.value +='00'">
+            <input type="button" value="0" onclick="display.value +='0'" >
+            <input type="button" value="=" onclick="display.value = eval(display.value)" class="operator" id="eq">
+          </div>
+        </form>
       </div>
-      <div>
-        <input type="button" value="7" onclick="display.value +='7'" class="bton">
-        <input type="button" value="8" onclick="display.value +='8'" class="bton">
-        <input type="button" value="9" onclick="display.value +='9'" class="bton">
-        <input type="button" value="*" onclick="display.value +='*'" class="operator bton">
-      </div>
-      <div>
-        <input type="button" value="4" onclick="display.value +='4'" class="bton">
-        <input type="button" value="5" onclick="display.value +='5'" class="bton">
-        <input type="button" value="6" onclick="display.value +='6'" class="bton">
-        <input type="button" value="-" onclick="display.value +='-'" class="operator bton">
-      </div>
-      <div>
-        <input type="button" value="1" onclick="display.value +='1'" class="bton">
-        <input type="button" value="2" onclick="display.value +='2'" class="bton">
-        <input type="button" value="3" onclick="display.value +='3'" class="bton">
-        <input type="button" value="+" onclick="display.value +='+'" class="operator bton">
-      </div>
-      <div>
-        <input type="button" value="00" onclick="display.value +='00'" class="bton">
-        <input type="button" value="0"  onclick="display.value +='0'" class="bton">
-        <input type="button" value="="  onclick="display.value = eval(display.value)" id="eq"  class="operator bton">
-      </div>
-    </form>
+
+
     </div>
   </div>
-  </div>
+
 
   </div>
         
