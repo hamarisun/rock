@@ -17,6 +17,7 @@ Now i think i just do it for fun(if i already have an idea of what to do) otherw
 
 - Desktop-style interface
 - Draggable and interactive windows
+- Working calculator
 - Runs directly in the browser
 
 ## How does it look
